@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster:400|Raleway:300,400,500&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    .popup {
+        min-width: 344px;
+        min-height: 188px;
+        background: #99c0c0;
+        background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        text-underline-position: above;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-family: "aborto";
+        text-align: center;
+
+    }
+
+    .yellow {
+        color: #0a080a;
+    }
+
+    .blue {
+        color: #090c0b;
+    }
+
+    p {
+        font-family: "roboto slab", sans-serif;
+        font-size: 0.75rem;
+    }
+
+    .button {
+        background-color: #eb8f8f;
+        position: relative;
+        height: 2rem;
+        width: 4rem;
+        border-radius: 25px;
+        transition: 1s;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .half {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background-color: rgb(171, 232, 236);
+        pointer-events: none;
+        transition: 1s;
+
+    }
+
+    @keyframes transformToBlue {
+        0% {
+            background-color: #FDFCA3;
+        }
+
+        100% {
+            background-color: #8ABFF0;
+        }
+    }
+
+    @keyframes transformToYellow {
+        0% {
+            background-color: #8ABFF0;
+        }
+
+        100% {
+            background-color: #FDFCA3;
+        }
+    }
+
+    @keyframes moveCircleRight {
+        0% {
+            left: 0;
+            transform: translateX(0);
+            background-color: rgb(255, 213, 0);
+        }
+
+        100% {
+            left: 100%;
+            transform: translateX(-100%);
+            background-color: #09090a;
+        }
+    }
+
+    @keyframes moveCircleLeft {
+        0% {
+            left: 100%;
+            transform: translateX(-100%);
+            background-color: #0b0b0c;
+        }
+
+        100% {
+            left: 0;
+            transform: translateX(0);
+            background-color: rgb(255, 213, 0);
+        }
+    }
+</style>
+
+<body>
+    <div class="popup">
+        <h1> <span class="yellow">Midnight</span><span class="blue">-Lizard</span></h1>
+        <p>
+            Everybody likes dark mode in everything unless and untill.
+            Dark Mode is an extension that helps you quickly turn the screen (chrome) to dark at night time and light at morning time!!😊😊
+        </p>
+
+        <div class="button">
+            <div class="half" style="left: 5px;">Dark</div>
+            <div class="half" style="right: 5px; text-align: right;">Light</div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <script src="./popup.js">
+    </script>
+
+</body>
+
+</html>

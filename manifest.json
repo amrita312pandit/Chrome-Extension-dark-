@@ -1,0 +1,29 @@
+{
+    "name": "Midnight Lizard",
+    "version": "0.0.2", 
+    "manifest_version" : 2,
+    "description" : "Everybody likes dark mode in everything unless and untill. :) ",
+     " Dark Mode is an extension that helps you quickly turn the screen (chrome) to dark at night time and light at morning time :) ":
+    "background", 
+        "scripts": [
+            "popup.js"
+        ],
+        "persistent": true
+    ,
+    "browser_action" : {
+        "default_title": "Midnight Lizard",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "alarms",
+        "fontSettings",
+        "storage",
+        "tabs",
+        "<all_urls>"
+    ]
+}
+
+
+
+
+
